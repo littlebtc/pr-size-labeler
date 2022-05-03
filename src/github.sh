@@ -11,6 +11,7 @@ github::calculate_total_modifications() {
 
     local -r additions=$(echo "$body" | jq '.additions')
     local -r deletions=$(echo "$body" | jq '.deletions')
+    echo "$body"
     echo "$additions"
     echo "$deletions"
   
